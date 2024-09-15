@@ -396,30 +396,12 @@ aside#product-section {
     max-width: 100%; /* Mengatur lebar maksimum daftar produk */
 }
 
-/* Style untuk Product Section */
-aside#product-section {
-    background-color: #f9f9f9; /* Warna latar belakang yang lebih terang untuk produk */
-    padding: 20px;
-}
-
-/* Mengatur tampilan daftar produk */
-.product-list {
-    display: flex;
-    flex-wrap: nowrap; /* Tidak membungkus baris produk, tampil dalam satu baris */
-    overflow-x: auto; /* Menambahkan scroll horizontal jika produk melebihi lebar kontainer */
-    gap: 20px; /* Jarak antar produk */
-    padding: 0;
-    margin: 0;
-    max-width: 100%; /* Mengatur lebar maksimum daftar produk */
-}
-
 /* Style untuk masing-masing box produk */
 .product {
-    background-color: #ffffff; /* Warna latar belakang putih untuk box produk */
+    background-color:  #fffcfc;; /* Warna latar belakang putih untuk box produk */
     border-radius: 10px;
     padding: 15px;
-    min-width: 250px; /* Mengatur lebar minimum produk agar tidak terlalu panjang */
-    max-width: 350px; /* Mengatur lebar maksimum produk agar tidak terlalu lebar */
+    min-width: 300px; /* Lebar minimum produk */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box; /* Mengatur box-sizing agar padding tidak menambah lebar elemen */
@@ -454,15 +436,13 @@ aside#product-section {
 /* Responsive design untuk produk */
 @media (max-width: 768px) {
     .product {
-        min-width: 200px; /* Mengatur lebar minimum produk pada tablet */
-        max-width: 300px; /* Mengatur lebar maksimum produk pada tablet */
+        min-width: 250px; /* Mengatur lebar minimum produk pada tablet */
     }
 }
 
 @media (max-width: 576px) {
     .product {
-        min-width: 150px; /* Mengatur lebar minimum produk pada ponsel */
-        max-width: 250px; /* Mengatur lebar maksimum produk pada ponsel */
+        min-width: 200px; /* Mengatur lebar minimum produk pada ponsel */
     }
 }
 
