@@ -1,30 +1,34 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanjung Karya Jaya</title>
-    <link rel="stylesheet" href="css\app.css">
+    <link rel="stylesheet" href="css/app.css">
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer">
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
      0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button id="scrollToTopBtn" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
     <nav>
         <div class="logo">
             <h4>Tanjung Karya Jaya</h4>
         </div>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Product</a></li>
-            <li><a href="">Service</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#product-section">Product</a></li>
+            <li><a href="#service">Service</a></li>
         </ul>
         <div class="menu-toggle">
             <input type="checkbox" />
@@ -33,7 +37,8 @@
             <span></span>
         </div>
     </nav>
-    <!-- Bungkus dengan elemen main untuk menjaga struktur semantik -->
+
+
     <main>
         <!-- SECTION HOME -->
         <section id="home">
@@ -46,208 +51,148 @@
                 </div>
                 <!-- SLIDESHOW HOME -->
                 <div class="slider">
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="asset/halaman utama.jpg" alt="Company Photo" class="home-image">
-                        </div>
-                        <div class="slide">
-                            <img src="asset/halaman utama 2.jpg" alt="Another Photo" class="home-image">
-                        </div>
-                        <div class="slide">
-                            <img src="asset/halaman utama 3.jpg" alt="Yet Another Photo" class="home-image">
-                        </div>
+                    <div class="mySlides">
+                        <img src="asset/halaman utama.jpg" alt="Company Photo" class="home-image">
+                    </div>
+                    <div class="mySlides">
+                        <img src="asset/halaman utama 2.jpg" alt="Another Photo" class="home-image">
+                    </div>
+                    <div class="mySlides">
+                        <img src="asset/halaman utama 3.jpg" alt="Yet Another Photo" class="home-image">
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- SECTION ABOUT -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                Tanjung Karya Jaya was established with a commitment to excellence in construction and development. With years of experience in the industry, we have become a trusted partner for clients who seek quality, reliability, and innovation in their projects. Our team of professionals is dedicated to delivering superior results, whether it's a small-scale construction or a large infrastructure development. We take pride in our ability to adapt to the evolving needs of the industry while maintaining our core values of integrity, safety, and sustainability.
+            </p>
+        </section>
+        <!-- SECTION PRODUCTS -->
         <aside id="product-section">
+            <h2>AIR DAMPER DUCT</h2>
             <div class="product-list">
-                <!-- Produk 1 -->
+                <!-- Product 1 -->
                 <div class="product">
+                    <img src="asset/airdamper 1.avif" alt="FC-2000 Curtain Fire Damper">
                     <div class="product-description">
-                        <h2>AIR DAMPER</h2>
-                        <p>Air damper adalah komponen dalam sistem ventilasi yang mengontrol aliran 
-                            udara melalui pintu atau pelat yang dapat dibuka dan ditutup. Fungsinya 
-                            adalah mengatur suhu, kelembaban, dan sirkulasi udara dalam bangunan atau ruangan.
-                            Damper dapat dioperasikan secara manual atau otomatis dengan sensor-sensor untuk pengaturan yang lebih efisien.</p>
-                        <h3>Jenis-jenis Ducting:</h3>
-                        <ul>
-                            <li>
-                                <img src="asset/circular-ducting.jpg" alt="Circular Ducting" style="width: 50px; height: auto;">
-                                Circular Ducting
-                            </li>
-                            <li>
-                                <img src="asset/rectangular-ducting.jpg" alt="Rectangular Ducting" style="width: 50px; height: auto;">
-                                Rectangular Ducting
-                            </li>
-                            <li>
-                                <img src="asset/spiral-ducting.jpg" alt="Spiral Ducting" style="width: 50px; height: auto;">
-                                Spiral Ducting
-                            </li>
-                            <li>
-                                <img src="asset/flexible-ducting.jpg" alt="Flexible Ducting" style="width: 50px; height: auto;">
-                                Flexible Ducting
-                            </li>
-                            <li>
-                                <img src="asset/insulated-ducting.jpg" alt="Insulated Ducting" style="width: 50px; height: auto;">
-                                Insulated Ducting
-                            </li>
-                            <li>
-                                <img src="asset/acoustic-ducting.jpg" alt="Acoustic Ducting" style="width: 50px; height: auto;">
-                                Acoustic Ducting
-                            </li>
-                            <li>
-                                <img src="asset/fire-rated-ducting.jpg" alt="Fire Rated Ducting" style="width: 50px; height: auto;">
-                                Fire Rated Ducting
-                            </li>
-                            <li>
-                                <img src="asset/stainless-steel-ducting.jpg" alt="Stainless Steel Ducting" style="width: 50px; height: auto;">
-                                Stainless Steel Ducting
-                            </li>
-                            <li>
-                                <img src="asset/galvanized-steel-ducting.jpg" alt="Galvanized Steel Ducting" style="width: 50px; height: auto;">
-                                Galvanized Steel Ducting
-                            </li>
-                            <li>
-                                <img src="asset/aluminum-ducting.jpg" alt="Aluminum Ducting" style="width: 50px; height: auto;">
-                                Aluminum Ducting
-                            </li>
-                            <li>
-                                <img src="asset/pvc-ducting.jpg" alt="PVC Ducting" style="width: 50px; height: auto;">
-                                PVC Ducting
-                            </li>
-                            <li>
-                                <img src="asset/polypropylene-ducting.jpg" alt="Polypropylene Ducting" style="width: 50px; height: auto;">
-                                Polypropylene Ducting
-                            </li>
-                            <li>
-                                <img src="asset/composite-ducting.jpg" alt="Composite Ducting" style="width: 50px; height: auto;">
-                                Composite Ducting
-                            </li>
-                            <li>
-                                <img src="asset/high-temperature-ducting.jpg" alt="High Temperature Ducting" style="width: 50px; height: auto;">
-                                High Temperature Ducting
-                            </li>
-                            <li>
-                                <img src="asset/low-temperature-ducting.jpg" alt="Low Temperature Ducting" style="width: 50px; height: auto;">
-                                Low Temperature Ducting
-                            </li>
-                            <li>
-                                <img src="asset/cleanroom-ducting.jpg" alt="Cleanroom Ducting" style="width: 50px; height: auto;">
-                                Cleanroom Ducting
-                            </li>
-                            <li>
-                                <img src="asset/pressure-ducting.jpg" alt="Pressure Ducting" style="width: 50px; height: auto;">
-                                Pressure Ducting
-                            </li>
-                            <li>
-                                <img src="asset/duct-board.jpg" alt="Duct Board" style="width: 50px; height: auto;">
-                                Duct Board
-                            </li>
-                            <li>
-                                <img src="asset/metal-ducting.jpg" alt="Metal Ducting" style="width: 50px; height: auto;">
-                                Metal Ducting
-                            </li>
-                            <li>
-                                <img src="asset/perforated-ducting.jpg" alt="Perforated Ducting" style="width: 50px; height: auto;">
-                                Perforated Ducting
-                            </li>
-                            <li>
-                                <img src="asset/hygienic-ducting.jpg" alt="Hygienic Ducting" style="width: 50px; height: auto;">
-                                Hygienic Ducting
-                            </li>
-                            <li>
-                                <img src="asset/anti-static-ducting.jpg" alt="Anti-Static Ducting" style="width: 50px; height: auto;">
-                                Anti-Static Ducting
-                            </li>
-                            <li>
-                                <img src="asset/duct-with-filters.jpg" alt="Duct with Filters" style="width: 50px; height: auto;">
-                                Duct with Filters
-                            </li>
-                            <li>
-                                <img src="asset/modular-ducting.jpg" alt="Modular Ducting" style="width: 50px; height: auto;">
-                                Modular Ducting
-                            </li>
-                        </ul>
+                        <h2>FC-2000 Curtain Fire Damper</h2>
                     </div>
                 </div>
-                <!-- Produk 2 -->
-                <!-- <div class="product">
-                    <img src="asset\GRIILE.png" alt="Product 2 Image">
-                    <div class="product-description">
-                        <h2>GRILLIE</h2>Return Air Grille adalah komponen penting dalam sistem HVAC yang berfungsi 
-                        untuk mengatur aliran udara kembali ke unit pendingin atau pemanas. Dengan desain yang sering kali 
-                        menyembunyikan saluran udara, grille ini juga dilengkapi dengan filter untuk menangkap debu dan partikel lainnya, 
-                        membantu menjaga kebersihan udara di dalam ruangan. 
-                        Fungsi utamanya adalah memastikan sirkulasi udara yang efisien dan menjaga kualitas udara dalam ruangan tetap baik..
-                        <p></p>
-                    </div>
-                </div> -->
-                <!-- Produk 3 -->
-                <!-- <div class="product">
-                    <img src="asset\squareduct.png" alt="Product 3 Image">
-                    <div class="product-description">
-                        <h2>SQUARE DUCT</h2>
-                        <p>Jenis ducting berbentuk persegi (segi empat) yang digunakan untuk mengalirkan bahan produksi atau sisa produksi, terutama debu halus dari mesin produksi, ke proses produksi berikutnya. Ducting ini dapat terbuat dari berbagai bahan seperti BJLS, Stainless Steel, Zincalume, galvalum, dan polyurethane. Ketebalan bahan ducting bervariasi tergantung pada dimensi ducting dan kebutuhan penggunaannya.
-                            Jika ducting terbuat dari BJLS, Stainless Steel, Zincalume, atau galvalum, ketebalan bahan akan disesuaikan dengan ukuran ducting, di mana semakin besar ukuran ducting, semakin tebal bahan yang digunakan. Namun, untuk ducting yang menggunakan bahan polyurethane, ketebalan bahan biasanya memiliki standar sekitar 20mm. Dalam kasus ducting persegi yang besar, untuk memastikan kekuatan dan stabilitasnya, pemasangan penguat (silangan penguat) di dalam ducting dilakukan. Fungsi utama dari square ducting ini adalah sebagai saluran untuk mengalirkan bahan produksi atau sisa produksi, terutama debu halus, 
-                            dari mesin produksi ke tahap produksi berikutnya seperti chute, conveyor, burner, dan lainnya.</p>
-                    </div>
-                </div> -->
-                <!-- Produk 4
+                <!-- Product 2 -->
                 <div class="product">
-                    <img src="asset/product4.jpg" alt="Product 4 Image">
+                    <img src="asset/airdamper 2.avif" alt="FD-1600 Fire Damper">
                     <div class="product-description">
-                        <h2>>BJLS DUCT</h2>
-                        <p>Deskripsi singkat mengenai produk 4.</p>
+                        <h2>FD-1600 Fire Damper</h2>
                     </div>
                 </div>
-                Produk 5
+                <!-- Product 3 -->
                 <div class="product">
-                    <img src="asset/product5.jpg" alt="Product 5 Image">
+                    <img src="asset/airdamper 3.png" alt="FS-1620 Combination Fire/Smoke Damper">
                     <div class="product-description">
-                        <h2>Nama Produk 5</h2>
-                        <p>Deskripsi singkat mengenai produk 5.</p>
+                        <h2>FS-1620 Combination Fire/Smoke Damper</h2>
                     </div>
                 </div>
-                Produk 6
+                <!-- Product 4 -->
                 <div class="product">
-                    <img src="asset/product6.jpg" alt="Product 6 Image">
+                    <img src="asset/airdamper4.jpg" alt="FS-1630 Combination Smoke/Fire Damper">
                     <div class="product-description">
-                        <h2>Nama Produk 6</h2>
-                        <p>Deskripsi singkat mengenai produk 6.</p>
+                        <h2>FS-1630 Combination Smoke/Fire Damper</h2>
                     </div>
                 </div>
-                Produk 7
+                <!-- Product 5 -->
                 <div class="product">
-                    <img src="asset/product7.jpg" alt="Product 7 Image">
+                    <img src="asset/be_prod_id1210_industrialvolumedamper.avif" alt="ID-1210 U-Channel Industrial Damper">
                     <div class="product-description">
-                        <h2>Nama Produk 7</h2>
-                        <p>Deskripsi singkat mengenai produk 7.</p>
-                    </div> -->
-                <!-- </div> -->
+                        <h2>ID-1210 U-Channel Industrial Damper</h2>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product">
+                    <img src="asset/be_prod_id1230_indusrialvolumedamper.avif" alt="ID-1230 U-Channel Industrial Damper">
+                    <div class="product-description">
+                        <h2>ID-1230 U-Channel Industrial Damper</h2>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product">
+                    <img src="asset/be_prod_id1410_industrialvolumedamper.avif" alt="ID-1410 Hat Channel Industrial Damper">
+                    <div class="product-description">
+                        <h2>ID-1410 Hat Channel Industrial Damper</h2>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product">
+                    <img src="asset/be_prod_pd_1250_op_cmyk.avif" alt="PD-1250 Pressure Relief Backdraft Damper">
+                    <div class="product-description">
+                        <h2>PD-1250 Pressure Relief Backdraft Damper</h2>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <div class="product">
+                    <img src="asset/be_prod_rb2000.jpg" alt="RB-2000 Round Balancing Damper">
+                    <div class="product-description">
+                        <h2>RB-2000 Round Balancing Damper</h2>
+                    </div>
+                </div>
+                <!-- Product 10 -->
+                <div class="product">
+                    <img src="asset/be_prod_rc2000_lowres.avif" alt="RC-2000 Round Control Damper">
+                    <div class="product-description">
+                        <h2>RC-2000 Round Control Damper</h2>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <div class="product">
+                    <img src="asset/be_prod_rf2000_cutout.avif" alt="RF-2000 True Round Fire Damper">
+                    <div class="product-description">
+                        <h2>RF-2000 True Round Fire Damper</h2>
+                    </div>
+                </div>
+                <!-- Product 12 -->
+                <div class="product">
+                    <img src="asset/be_prod_ri1000_cutout.avif" alt="RI-1000 Round Control Damper">
+                    <div class="product-description">
+                        <h2>RI-1000 Round Control Damper</h2>
+                    </div>
+                </div>
+                <!-- Add more products as needed -->
             </div>
         </aside>
+        <!-- SECTION SERVICES -->
+        <section id="service">
+            <h2>Our Services</h2>
+            <p>
+                At Tanjung Karya Jaya, we offer a wide range of services designed to meet the diverse needs of our clients. Our services include:
+            </p>
+            <ul>
+                <li><strong>Construction Services:</strong> From residential buildings to commercial complexes, we provide comprehensive construction services with a focus on quality and safety.</li>
+                <li><strong>Project Management:</strong> Our project management team ensures that every project is completed on time, within budget, and to the highest standards.</li>
+                <li><strong>Consulting:</strong> We offer expert consulting services to help clients make informed decisions and achieve their construction goals.</li>
+                <li><strong>Maintenance:</strong> We provide ongoing maintenance services to ensure that our clients' properties remain in excellent condition.</li>
+            </ul>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer>
         <div class="footer-left">
-            <!-- Teks copyright yang dipusatkan -->
             <p>&copy; 2024 Tanjung Karya Jaya. All rights reserved.</p>
-    
-            <!-- ASIDE dengan social media -->
             <aside>
                 <div class="social-media">
                     <ul>
-                        <li><a href="#" style="text-decoration: none; color: white;"><i class="fab fa-whatsapp" style="font-size: 24px;"></i></a></li>
-                        <li><a href="#" style="text-decoration: none; color: white;"><i class="fab fa-linkedin-in" style="font-size: 24px;"></i></a></li>
-                        <li><a href="#" style="text-decoration: none; color: white;"><i class="fab fa-twitter" style="font-size: 24px;"></i></a></li>
-                        <li><a href="#" style="text-decoration: none; color: white;"><i class="fab fa-facebook" style="font-size: 24px;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                     </ul>
                 </div>
             </aside>
         </div>
     </footer>
-      <!-- END -->
+    <!-- END -->
     <script src="script.js"></script>
 </body>
 </html>
